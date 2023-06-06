@@ -17,4 +17,20 @@ numero = 5
 resultado = factorial(numero)
 print("El factorial de", numero, "es", resultado)
 
+# Ejercicio 3: Verificar si un número es primo
+
+def es_primo(numero):
+    if numero < 2:
+        return False
+    for i in range(2, int(numero/2)+1):
+        if numero % i == 0:
+            return False
+    return True
+
+num = 17
+if es_primo(num):
+    print(num, "es un número primo")
+else:
+    print(num, "no es un número primo")
+
 
