@@ -39,3 +39,12 @@ cadena = "Hola, mundo!"
 inversa = cadena[::-1]
 print("La cadena invertida es:", inversa)
 
+# Ejercicio 5: Calcular el área de un círculo
+
+import math
+
+radio = 5
+area = math.pi * radio**2
+print("El área del círculo es:", area)
+
+
