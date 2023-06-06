@@ -1,4 +1,4 @@
-// Ejercicio 1: Suma de dos números
+# Ejercicio 1: Suma de dos números
 
 num1 = 10
 num2 = 5
