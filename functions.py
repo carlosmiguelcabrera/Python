@@ -33,4 +33,9 @@ if es_primo(num):
 else:
     print(num, "no es un número primo")
 
+# Ejercicio 4: Invertir una cadena de texto
+
+cadena = "Hola, mundo!"
+inversa = cadena[::-1]
+print("La cadena invertida es:", inversa)
 
