@@ -74,3 +74,15 @@ if es_palindromo(palabra):
 else:
     print("No es un palíndromo.")
 
+# Calculadora de promedio: Solicita al usuario una lista de números y calcula el promedio.
+
+n = int(input("Ingrese la cantidad de números: "))
+numeros = []
+for i in range(n):
+    numero = float(input("Ingrese un número: "))
+    numeros.append(numero)
+
+promedio = sum(numeros) / len(numeros)
+print("El promedio es:", promedio)
+
+
