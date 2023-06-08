@@ -47,4 +47,13 @@ radio = 5
 area = math.pi * radio**2
 print("El área del círculo es:", area)
 
+# Generador de números pares: Genera una lista de números pares en un rango dado.
+
+inicio = int(input("Ingrese el inicio del rango: "))
+fin = int(input("Ingrese el fin del rango: "))
+
+numeros_pares = [num for num in range(inicio, fin + 1) if num % 2 == 0]
+print("Números pares:", numeros_pares)
+
+
 
