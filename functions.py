@@ -62,3 +62,15 @@ celsius = float(input("Ingrese la temperatura en grados Celsius: "))
 fahrenheit = (celsius * 9/5) + 32
 print("La temperatura en grados Fahrenheit es:", fahrenheit)
 
+# Verificador de palíndromos: Verifica si una palabra o frase es un palíndromo.
+
+def es_palindromo(texto):
+    texto = texto.lower().replace(" ", "")
+    return texto == texto[::-1]
+
+palabra = input("Ingrese una palabra o frase: ")
+if es_palindromo(palabra):
+    print("Es un palíndromo.")
+else:
+    print("No es un palíndromo.")
+
