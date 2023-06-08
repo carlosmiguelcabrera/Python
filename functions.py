@@ -110,3 +110,32 @@ oracion = input("Ingrese una oración: ")
 palabras = oracion.split()
 cantidad_palabras = len(palabras)
 print("Cantidad de palabras:", cantidad_palabras)
+
+#Validador de contraseña: Solicita al usuario que ingrese una contraseña y verifica si cumple con ciertos criterios de seguridad (por ejemplo, longitud mínima, presencia de letras mayúsculas, números, etc.).
+
+import re
+
+def es_contraseña_segura(contraseña):
+    longitud_minima = 8
+    tiene_mayusculas = re.search(r"[A-Z]", contraseña)
+    tiene_minusculas = re.search(r"[a-z]", contraseña)
+    tiene_numeros = re.search(r"\d", contraseña)
+    tiene_caracteres_especiales = re.search(r"\W", contraseña)
+
+    if (
+        len(contraseña) >= longitud_minima
+        and tiene_mayusculas
+        and tiene_minusculas
+        and tiene_numeros
+        and tiene_caracteres_especiales
+    ):
+        return True
+    else:
+        return False
+
+contraseña = input("Ingrese una contraseña: ")
+
+if es_contraseña_segura(contraseña):
+    print("La contraseña es segura.")
+else:
+    print("La contraseña no cumple con los requisitos de seguridad.")
