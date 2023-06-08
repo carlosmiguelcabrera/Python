@@ -103,3 +103,10 @@ print("Números primos:")
 for num in range(inicio, fin + 1):
     if es_primo(num):
         print(num)
+
+# Contador de palabras: Cuenta la cantidad de palabras en una oración.
+
+oracion = input("Ingrese una oración: ")
+palabras = oracion.split()
+cantidad_palabras = len(palabras)
+print("Cantidad de palabras:", cantidad_palabras)
