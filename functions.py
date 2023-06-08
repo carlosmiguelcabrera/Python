@@ -56,4 +56,9 @@ numeros_pares = [num for num in range(inicio, fin + 1) if num % 2 == 0]
 print("Números pares:", numeros_pares)
 
 
+# Conversor de Celsius a Fahrenheit: Convierte una temperatura en grados Celsius a grados Fahrenheit.
+
+celsius = float(input("Ingrese la temperatura en grados Celsius: "))
+fahrenheit = (celsius * 9/5) + 32
+print("La temperatura en grados Fahrenheit es:", fahrenheit)
 
