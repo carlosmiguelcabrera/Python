@@ -139,3 +139,18 @@ if es_contraseña_segura(contraseña):
     print("La contraseña es segura.")
 else:
     print("La contraseña no cumple con los requisitos de seguridad.")
+
+#Generador de números primos: Genera una lista de los primeros n números primos.
+
+def generar_primos(n):
+    primos = []
+    num = 2
+    while len(primos) < n:
+        if all(num % i != 0 for i in range(2, int(num**0.5) + 1)):
+            primos.append(num)
+        num += 1
+    return primos
+
+n = int(input("Ingrese la cantidad de números primos a generar: "))
+primos_generados = generar_primos(n)
+print("Números primos generados:", primos_generados)
