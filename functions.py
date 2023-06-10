@@ -154,3 +154,11 @@ def generar_primos(n):
 n = int(input("Ingrese la cantidad de números primos a generar: "))
 primos_generados = generar_primos(n)
 print("Números primos generados:", primos_generados)
+
+# Multiplicación de todos los elementos en una lista:
+
+nums = [1, 2, 3, 4, 5]
+
+producto = functools.reduce(lambda x, y: x * y, nums)
+print(producto)
+
