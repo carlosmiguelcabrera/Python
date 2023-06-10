@@ -162,3 +162,10 @@ nums = [1, 2, 3, 4, 5]
 producto = functools.reduce(lambda x, y: x * y, nums)
 print(producto)
 
+# Filtrar palabras que comiencen con una letra específica:
+
+palabras = ['manzana', 'banana', 'pera', 'naranja', 'sandía']
+letra = 'b'
+
+palabras_filtradas = list(filter(lambda x: x.startswith(letra), palabras))
+print(palabras_filtradas)
