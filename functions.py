@@ -169,3 +169,11 @@ letra = 'b'
 
 palabras_filtradas = list(filter(lambda x: x.startswith(letra), palabras))
 print(palabras_filtradas)
+
+# Obtener la longitud de cada palabra en una lista:
+
+palabras = ['Hola', 'mundo', 'programación', 'funcional']
+
+longitudes = list(map(lambda x: len(x), palabras))
+print(longitudes)
+
