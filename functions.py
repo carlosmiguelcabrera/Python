@@ -177,3 +177,13 @@ palabras = ['Hola', 'mundo', 'programación', 'funcional']
 longitudes = list(map(lambda x: len(x), palabras))
 print(longitudes)
 
+# Generador de contraseñas:
+
+import random
+import string
+
+def generar_contrasena(longitud):
+    caracteres = string.ascii_letters + string.digits
+    contrasena = ''.join(random.choice(caracteres) for _ in range(longitud))
+    return contrasena
+
