@@ -187,3 +187,22 @@ def generar_contrasena(longitud):
     contrasena = ''.join(random.choice(caracteres) for _ in range(longitud))
     return contrasena
 
+# Clase Persona: Crea una clase llamada "Persona" que tenga atributos como nombre, edad y profesión. Implementa métodos para obtener y establecer estos atributos.
+
+class Persona:
+    def __init__(self, nombre, edad, profesion):
+        self.nombre = nombre
+        self.edad = edad
+        self.profesion = profesion
+    
+    def obtener_nombre(self):
+        return self.nombre
+    
+    def obtener_edad(self):
+        return self.edad
+    
+    def obtener_profesion(self):
+        return self.profesion
+    
+    def establecer_profesion(self, nueva_profesion):
+        self.profesion = nueva_profesion
