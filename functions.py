@@ -206,3 +206,22 @@ class Persona:
     
     def establecer_profesion(self, nueva_profesion):
         self.profesion = nueva_profesion
+
+# ejercicio números primos
+
+def es_primo(numero):
+    if numero < 2:
+        return False
+    for i in range(2, int(numero ** 0.5) + 1):
+        if numero % i == 0:
+            return False
+    return True
+
+# Solicitar al usuario ingresar un número
+num = int(input("Ingrese un número: "))
+
+# Verificar si el número es primo
+if es_primo(num):
+    print(num, "es un número primo")
+else:
+    print(num, "no es un número primo")
