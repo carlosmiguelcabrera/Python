@@ -225,3 +225,13 @@ if es_primo(num):
     print(num, "es un número primo")
 else:
     print(num, "no es un número primo")
+
+#Calculadora de suma
+Escribe un programa en Python que solicite al usuario dos números enteros y realice la suma de ambos
+
+num1 = int(input("Ingresa el primer número entero: "))
+num2 = int(input("Ingresa el segundo número entero: "))
+
+suma = num1 + num2
+
+print("La suma de", num1, "y", num2, "es:", suma)
