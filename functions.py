@@ -1,4 +1,4 @@
-# Ejercicio 1: Suma de dos números
+me# Ejercicio 1: Suma de dos números
 
 num1 = 10
 num2 = 5
@@ -247,4 +247,22 @@ num1 = int(input("Ingrese el primer número: "))
 num2 = int(input("Ingrese el segundo número: "))
 resultado = mcd(num1, num2)
 print("El MCD de", num1, "y", num2, "es", resultado)
+
+#factorial
+
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+# Solicitar al usuario que ingrese un número entero no negativo
+num = int(input("Ingresa un número entero no negativo: "))
+
+# Verificar si el número es válido
+if num < 0:
+    print("El número debe ser no negativo.")
+else:
+    result = factorial(num)
+    print("El factorial de", num, "es", result)
 
