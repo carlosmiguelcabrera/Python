@@ -1,4 +1,7 @@
-me# Ejercicio 1: Suma de dos números
+#Ejercicios y anotaciones sobre Python
+
+
+# Ejercicio 1: Suma de dos números
 
 num1 = 10
 num2 = 5
