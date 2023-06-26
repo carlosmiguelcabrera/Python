@@ -269,3 +269,22 @@ else:
     result = factorial(num)
     print("El factorial de", num, "es", result)
 
+# Validación de tarjeta de crédito:
+
+def validar_tarjeta_credito(numero):
+    numero = str(numero)
+    numero_reverso = numero[::-1]
+    suma = 0
+    for i in range(len(numero_reverso)):
+        digito = int(numero_reverso[i])
+        if i % 2 == 1:
+            digito *= 2
+            if digito > 9:
+                digito = digito // 10 + digito % 10
+        suma += digito
+    return suma % 10 == 0
+
+# Ejemplo de uso:
+numero_tarjeta = 4012888888881881
+print(validar_tarjeta_credito(numero_tarjeta))  # True
+
