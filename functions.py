@@ -288,3 +288,12 @@ def validar_tarjeta_credito(numero):
 numero_tarjeta = 4012888888881881
 print(validar_tarjeta_credito(numero_tarjeta))  # True
 
+# Pedir al usuario la base y la altura del triángulo
+base = float(input("Ingrese la base del triángulo: "))
+altura = float(input("Ingrese la altura del triángulo: "))
+
+# Calcular el área del triángulo
+area = (base * altura) / 2
+
+# Mostrar el resultado
+print("El área del triángulo es:", area)
