@@ -298,16 +298,7 @@ area = (base * altura) / 2
 # Mostrar el resultado
 print("El área del triángulo es:", area)
 
-#Maximo en lista - Resolución
-
-
-User
-Ejercicio avanzado de python y su resolución 
-
-ChatGPT
-¡Claro! Aquí tienes un ejercicio avanzado de Python junto con su resolución:
-
-Ejercicio: Encontrar el número más grande en una lista de números.
+#Maximo en lista
 
 Instrucciones:
 Escribe una función llamada "encontrar_maximo" que tome una lista de números como argumento y devuelva el número más grande de la lista.
