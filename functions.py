@@ -1,4 +1,4 @@
-#Ejercicios y anotaciones sobre Python
+0#Ejercicios y anotaciones sobre Python
 
 
 # Ejercicio 1: Suma de dos números
@@ -297,3 +297,39 @@ area = (base * altura) / 2
 
 # Mostrar el resultado
 print("El área del triángulo es:", area)
+
+#Maximo en lista - Resolución
+
+
+User
+Ejercicio avanzado de python y su resolución 
+
+ChatGPT
+¡Claro! Aquí tienes un ejercicio avanzado de Python junto con su resolución:
+
+Ejercicio: Encontrar el número más grande en una lista de números.
+
+Instrucciones:
+Escribe una función llamada "encontrar_maximo" que tome una lista de números como argumento y devuelva el número más grande de la lista.
+
+Puedes seguir los siguientes pasos para resolver este ejercicio:
+
+Define una función llamada "encontrar_maximo" que tome una lista llamada "numeros" como argumento.
+Inicializa una variable llamada "maximo" con el primer número de la lista. Puedes asumir que la lista contiene al menos un número.
+Recorre la lista de números usando un bucle "for".
+Para cada número en la lista, compáralo con el valor actual de "maximo". Si el número es mayor que "maximo", actualiza el valor de "maximo".
+Después de recorrer toda la lista, devuelve el valor de "maximo".
+
+def encontrar_maximo(numeros):
+    maximo = numeros[0]  # Inicializar con el primer número de la lista
+
+    for numero in numeros:
+        if numero > maximo:
+            maximo = numero
+
+    return maximo
+
+# Ejemplo de uso
+lista_numeros = [10, 5, 27, 8, 15]
+resultado = encontrar_maximo(lista_numeros)
+print("El número más grande es:", resultado)
