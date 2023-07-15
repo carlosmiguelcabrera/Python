@@ -1,4 +1,4 @@
-0#Ejercicios y anotaciones sobre Python
+#Ejercicios y anotaciones sobre Python
 
 
 # Ejercicio 1: Suma de dos números
@@ -324,3 +324,16 @@ def encontrar_maximo(numeros):
 lista_numeros = [10, 5, 27, 8, 15]
 resultado = encontrar_maximo(lista_numeros)
 print("El número más grande es:", resultado)
+
+# Ejercicio: Calculadora de promedio
+
+def calcular_promedio(lista_numeros):
+    suma = sum(lista_numeros)
+    promedio = suma / len(lista_numeros)
+    return promedio
+
+numeros_usuario = input("Ingresa una lista de números separados por comas: ")
+lista_numeros = [float(num) for num in numeros_usuario.split(",")]
+promedio = calcular_promedio(lista_numeros)
+print("El promedio de los números es:", promedio)
+
